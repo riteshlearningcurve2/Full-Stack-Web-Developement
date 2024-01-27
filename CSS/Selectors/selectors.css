@@ -1,0 +1,70 @@
+/*Basic Selectors*/
+
+p{
+    color: red;
+}/*Selecting by Tag Name, it applies to all elements with that tag name */
+
+.para{
+    background-color: #00ffff;
+} /*selecting by class name , it applies to all  ements with that class name  */
+
+#name{
+
+    border: 2px solid black;
+    /*  selecting by ID , It applies to all elements with that id*/
+}
+
+/*MORE SELECTORS*/
+
+/*DESCENDANT*/
+
+div p{
+    font-size: 24px;
+}
+
+#name>p/*For Immediate Children not for the descendants */{
+    text-align: center;
+}
+
+div+p{/* For Sibilings Immediate After Only*/
+
+    font-style: italic;
+}
+
+div~p{
+    font-style: italic;
+}
+
+/* Pseduo Selectors and Pseudo Classes  */
+
+
+/* Pseduo Elements*/
+
+.para::first-line{
+    color: green;
+}
+
+.para::first-letter{
+    font-size: 40px;
+}
+
+.para::after{
+    content: world;
+}
+
+.para::before{
+    content: '" "';
+}
+
+.para::content{
+    color: blue;
+}
+
+
+/* Universal   Selector ( * )  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
